@@ -1,0 +1,65 @@
+#!/bin/bash
+
+echo "[TASK 1] Join node to Kubernetes Cluster"
+cat >>/home/vagrant/.ssh/id_rsa<<EOF
+-----BEGIN OPENSSH PRIVATE KEY-----
+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
+80p0HAuHFElOcAAAALYW5zYXJAV2FoaWQ=
+-----END OPENSSH PRIVATE KEY-----
+EOF
+
+echo "[TASK 2] Change private key permission"
+chmod 600 /home/vagrant/.ssh/id_rsa
+
+echo "[TASK 3] Installing SSHPASS"
+yum install -y sshpass >/dev/null 2>&1
+
+echo "[TASK 4] Pull cluster connection token"
+sshpass -p 'P@ssw0rd' scp -o StrictHostKeyChecking=no root@192.168.56.101:/joincluster.sh /joincluster.sh
+
+# scp -i /home/vagrant/.ssh/id_rsa -o StrictHostKeyChecking=no root@192.168.0.101:/joincluster.sh /joincluster.sh
+
+echo "[TASK 5] Disable Swapoff"
+sed -i '/swap/d' /etc/fstab
+swapoff -a
+
+echo "[TASK 6] Remove Containerd"
+rm /etc/containerd/config.toml
+systemctl restart containerd
+
+echo "[Task 7] Join the cluster"
+bash /joincluster.sh >/dev/null 2>&1
